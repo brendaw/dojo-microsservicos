@@ -1,0 +1,21 @@
+server:
+  port: 8300
+  tomcat:
+    max-threads: 200
+    max-http-post-size: 2MB
+    max-swallow-size: 2MB
+    max-http-header-size: 8KB
+
+endpoints:
+  health:
+    sensitive: false
+
+logging:
+  level:
+    org.dojo.simple: DEBUG
+
+spring:
+  data:
+    mongodb:
+      host: 'mongo'
+      port: '27017'
