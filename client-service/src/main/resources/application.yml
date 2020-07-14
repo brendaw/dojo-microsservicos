@@ -1,0 +1,27 @@
+server:
+  port: 8200
+  tomcat:
+    max-threads: 200
+    max-http-post-size: 2MB
+    max-swallow-size: 2MB
+    max-http-header-size: 8KB
+
+endpoints:
+  health:
+    sensitive: false
+
+logging:
+  level:
+    org.dojo.client: DEBUG
+
+spring:
+  datasource:
+    password: supersecretpassword
+    url: jdbc:postgresql://postgres:5432/client
+    username: client
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
