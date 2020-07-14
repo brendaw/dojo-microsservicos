@@ -12,7 +12,7 @@ endpoints:
 
 logging:
   level:
-    org.dojo.simple: DEBUG
+    org.dojo.invoice: DEBUG
 
 spring:
   data:
