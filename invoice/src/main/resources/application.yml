@@ -13,7 +13,6 @@ endpoints:
 logging:
   level:
     org.dojo.invoice: DEBUG
-    org.springframework.web.servlet.mvc.method.annotation: DEBUG
 
 
 spring:
