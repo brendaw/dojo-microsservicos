@@ -30,6 +30,8 @@ Com esse tipo de configuração, será mais fácil realizar o gerenciamento das 
 
 Crie um arquivo com o nome Dockerfile na raiz do repositório do serviço base criado na atividade anterior, com o seguinte conteúdo:
 
+*simple/Dockerfile*
+
 ```dockerfile
 FROM openjdk:11-jre-slim
 

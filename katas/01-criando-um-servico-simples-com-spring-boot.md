@@ -50,6 +50,8 @@ Primeiro precisamos renomear o arquivo `simple/src/main/resources/application.pr
 
 Depois, adicionaremos o seguinte conteúdo no nosso novo *application.yml*:
 
+*simple/src/main/resources/application.yml*
+
 ```yaml
 server:
   port: 8100
@@ -76,6 +78,8 @@ Para isso, vamos criar um novo pacote (pasta) com o nome `service` dentro de `si
 
 E dentro desse pacote criaremos a classe `HelloWorldService` com esse conteúdo:
 
+*simple/src/main/java/org/dojo/simple/service/HelloWorldService.java*
+
 ```java
 package org.dojo.simple.service;
 
@@ -94,6 +98,8 @@ public class HelloWorldService {
 Depois disso, precisamos criar um novo pacote com o nome `controller`, que também ficará dentro de `simple/src/main/java/org/dojo/simple`. 
 
 E dentro desse novo pacote criaremos a classe `HelloWorldController`, com o conteúdo seguinte:
+
+*simple/src/main/java/org/dojo/simple/controller/HelloWorldController.java*
 
 ```java
 package org.dojo.simple.controller;
