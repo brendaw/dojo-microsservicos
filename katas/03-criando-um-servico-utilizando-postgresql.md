@@ -20,6 +20,8 @@
 
 Neste exercício, iremos criar um serviço para realizar o gerenciamento dos registros dos clientes, que serão persistidos no PostgreSQL.  O serviço será empacotando numa imagem e container do Docker, que irá se conectar ao PostgreSQL rodando paralelamente em outro container.
 
+*Para essa atividade, você pode [acessar aqui](/client-base) o conteúdo base para poder seguir com a explicação. Apenas lembre de renomar o nome da pasta para client.*
+
 ## Preparando o client-service
 
 Para começar essa atividade, você pode criar um novo serviço com o nome `client-service` a partir do Spring Initializr, ou pode pegar esse serviço já criado neste link.
@@ -80,7 +82,7 @@ Depois, adicione essas configurações ao final do arquivo `application.yml`:
 spring:
   datasource:
     password: supersecretpassword
-    url: jdbc:postgresql://localhost:5432/client
+    url: jdbc:postgresql://postgres:5432/client
     username: client
   jpa:
     hibernate:
@@ -281,6 +283,8 @@ $ curl --request GET http://localhost:8200/clients/1
 ```
 
 Perfeito! Temos o nosso serviço fazendo o CRUD da forma como queríamos.
+
+*Se quiser, você pode [acessar aqui](/client-service) para comparar a sua implementação com a implementação esperada.*
 
 ## Para ir além
 

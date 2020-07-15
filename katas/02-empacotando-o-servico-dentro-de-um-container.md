@@ -22,6 +22,8 @@ Nesta atividade, vamos aprender a como empacotar um serviço em Spring Boot dent
 
 *Você pode pular esse exercício caso se sinta confortável trabalhar com Docker. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre como gerar imagens e containers Docker a partir de serviços Spring Boot.*
 
+*Caso você não tenha feito a primeira atividade, [acesse aqui](/simple) o conteúdo gerado para poder seguir com a explicação*.
+
 ## Configurando a geração da imagem Docker
 
 Para deixar o serviço apto a ser empacotado, criaremos um novo tipo de arquivo: o Dockerfile. Nele, terá todas as informações necessárias para gerar uma imagem docker com a última versão compilada do serviço.
@@ -206,6 +208,8 @@ openjdk             11-jre-slim         030d68516e3a        3 weeks ago         
 ```
 
 E assim excluimos todos os rastros da nossa imagem e container Docker do nosso serviço.
+
+*Se quiser, você pode [acessar aqui](/simple-docker) para comparar a sua implementação com a implementação esperada.*
 
 ## Para ir além
 

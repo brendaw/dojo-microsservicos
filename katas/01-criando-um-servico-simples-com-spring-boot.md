@@ -173,6 +173,10 @@ $ curl http://localhost:8100/actuator/health
 
 ```
 
+## Resultado
+
+Você pode [acessar aqui](/simple) o conteúdo gerado nessa atividade.
+
 ## Para ir além
 
 -   [Spring Initializr](https://start.spring.io/)

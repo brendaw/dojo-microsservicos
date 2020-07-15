@@ -20,6 +20,8 @@
 
 Neste exercício, iremos criar um serviço para realizar o gerenciar notas fiscais, que serão persistidos no MongoDB. O serviço será empacotando numa imagem e container do Docker, que irá se conectar ao MariaDB rodando paralelamente em outro container.
 
+*Para essa atividade, você pode [acessar aqui](/invoice-base) o conteúdo base para poder seguir com a explicação. Apenas lembre de renomar o nome da pasta para invoice.*
+
 ## Preparando o invoice-service
 
 Para começar essa atividade, você pode criar um novo serviço com o nome `invoice-service` a partir do Spring Initializr, ou pode pegar esse serviço já criado neste link.
@@ -368,6 +370,8 @@ $ curl --request GET http://localhost:8300/invoices
 ```
 
 Isso aí. Todas as notas estão retornando.
+
+*Se quiser, você pode [acessar aqui](/invoice-service) para comparar a sua implementação com a implementação esperada.*
 
 ## Para ir além
 

@@ -20,7 +20,7 @@
 
 Neste exercício, iremos realizar a orquestração dos serviços e banco de dados configurados até agora. Para isso, faremos a configuração das imagens e containers dentro do Docker Compose, além de modificar os dois serviços para aceitarem configurações externas do orquestrados, bem como modificar o invoice-service para se conectar ao cliente-service na hora de gerar a nota fiscal.
 
-Certifique-se de ter os serviços desenvolvidos nos dois últimos exercícios para poder seguir com esse treinamento.
+*Certifique-se de ter os serviços desenvolvidos nos dois últimos exercícios para poder seguir com esse treinamento. [Acesse aqui](/client-service) o cliente-service. [E aqui](/invoice-service) o invoice-service.*
 
 ## Configurando o docker-compose.yml
 
@@ -624,6 +624,8 @@ $ curl --request GET http://localhost:8300/invoices
 ```
 
 Assim, enfim, temos nossos microsserviços orquestrados e comunicando entre si.
+
+*Se quiser, você pode [acessar aqui](/invoice) o invoice-service, [e aqui](/client) o client service, para comparar a sua implementação com a implementação esperada.*
 
 ## Para ir além
 
