@@ -1,6 +1,22 @@
 # 05 - Orquestrando os Serviços utilizando Docker Compose
 
-`Certifique-se de preencher os pré-requisitos, bem como ter instalado e configurado os programas presentes nessa seção, para participar desse Dojo.`
+## Katas
+
+[00 - Pré-requisitos](katas/00-pre-requisitos.md)
+
+[01 - Criando um Serviço simples com Spring Boot](katas/01-criando-um-servico-simples-com-spring-boot.md)
+
+[02 - Empacotando o Serviço dentro de um Container](katas/02-empacotando-o-servico-dentro-de-um-container.md)
+
+[03 - Criando um Serviço utilizando PostgreSQL](katas/03-criando-um-servico-utilizando-postgresql.md)
+
+[04 - Criando um Serviço utilizando MongoDB](katas/04-criando-um-servico-utilizando-mongodb.md)
+
+**[05 - Orquestrando os Serviços utilizando Docker Compose](katas/05-orquestrando-os-servicos-utilizando-docker-compose.md)**
+
+## Introdução
+
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
 
 Neste exercício, iremos realizar a orquestração dos serviços e banco de dados configurados até agora. Para isso, faremos a configuração das imagens e containers dentro do Docker Compose, além de modificar os dois serviços para aceitarem configurações externas do orquestrados, bem como modificar o invoice-service para se conectar ao cliente-service na hora de gerar a nota fiscal.
 
@@ -563,4 +579,14 @@ Agora sim temos os nossos microsserviços rodando por meio de um orquestrador!
 Vamos testar?
 
 ## Testando a conexão dos nossos serviços
+
+## Para ir além
+
+### Menu
+
+[Ver índice de Katas](#katas)
+
+[Ir para a atividade anterior](04-criando-um-servico-utilizando-mongodb.md)
+
+[Voltar para o README](README.md)
 

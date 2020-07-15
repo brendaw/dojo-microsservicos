@@ -1,10 +1,26 @@
 # 01 - Criando um Serviço simples com Spring Boot
 
-`Certifique-se de preencher os pré-requisitos, bem como ter instalado e configurado os programas presentes nessa seção, para participar desse Dojo.`
+## Katas
+
+[00 - Pré-requisitos](katas/00-pre-requisitos.md)
+
+**[01 - Criando um Serviço simples com Spring Boot](katas/01-criando-um-servico-simples-com-spring-boot.md)**
+
+[02 - Empacotando o Serviço dentro de um Container](katas/02-empacotando-o-servico-dentro-de-um-container.md)
+
+[03 - Criando um Serviço utilizando PostgreSQL](katas/03-criando-um-servico-utilizando-postgresql.md)
+
+[04 - Criando um Serviço utilizando MongoDB](katas/04-criando-um-servico-utilizando-mongodb.md)
+
+[05 - Orquestrando os Serviços utilizando Docker Compose](katas/05-orquestrando-os-servicos-utilizando-docker-compose.md)
+
+## Introdução
+
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
 
 Nesta atividade, iremos criar um serviço REST simples em Spring Boot que retorna "Hello World" a partir do endpoint `/hello`.
 
-`Você pode pular esse exercício caso se sinta confortável em desenvolver aplicações com Spring Boot. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre os princícios do Spring Boot.`
+*Você pode pular esse exercício caso se sinta confortável em desenvolver aplicações com Spring Boot. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre os princícios do Spring Boot.*
 
 ## Passo-a-passo para criar a base do serviço
 
@@ -51,13 +67,6 @@ logging:
   level:
     org.dojo.simple: DEBUG
 ```
-
-Explicando um pouco essas configurações:
-
-1.  Na linha 2 estamos definindo em qual porta o nosso serviço irá rodar. No nosso caso, estamos definindo a porta 8100.
-2.  Nas linhas 4 a 7 estão algumas configurações para otimizar a utilização de recursos do sistema pelo serviço.
-3.  Nas linhas 9 a 11 estão as configurações do Actuator para retornar dados de saúde do serviço, sem expor informações sensíveis.
-4.  E nas linhas 13 a 15 está a configuração para logar no console com o nível DEBUG. Não usaremos log nessa atividade, mas mesmo assim é uma boa prática deixar definido para futuras implementações.
 
 ## Criando o nosso Hello World
 
@@ -165,3 +174,13 @@ $ curl http://localhost:8100/actuator/health
 -   [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 -   [Gradle Build Tool](https://gradle.org)
 -   [Gradle Command-Line Interface](https://docs.gradle.org/current/userguide/command_line_interface.html)
+
+### Menu
+
+[Ver índice de Katas](#katas)
+
+[Ir para a próxima atividade](02-empacotando-o-servico-dentro-de-um-container.md)
+
+[Ir para a atividade anterior](00-pre-requisitos.md)
+
+[Voltar para o README](/README.md)

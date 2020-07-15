@@ -1,6 +1,22 @@
 # 03 - Criando um Serviço utilizando PostgreSQL
 
-`Certifique-se de preencher os pré-requisitos, bem como ter instalado e configurado os programas presentes nessa seção, para participar desse Dojo.`
+## Katas
+
+[00 - Pré-requisitos](katas/00-pre-requisitos.md)
+
+[01 - Criando um Serviço simples com Spring Boot](katas/01-criando-um-servico-simples-com-spring-boot.md)
+
+[02 - Empacotando o Serviço dentro de um Container](katas/02-empacotando-o-servico-dentro-de-um-container.md)
+
+**[03 - Criando um Serviço utilizando PostgreSQL](katas/03-criando-um-servico-utilizando-postgresql.md)**
+
+[04 - Criando um Serviço utilizando MongoDB](katas/04-criando-um-servico-utilizando-mongodb.md)
+
+[05 - Orquestrando os Serviços utilizando Docker Compose](katas/05-orquestrando-os-servicos-utilizando-docker-compose.md)
+
+## Introdução
+
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
 
 Neste exercício, iremos criar um serviço para realizar o gerenciamento dos registros dos clientes, que serão persistidos no PostgreSQL.  O serviço será empacotando numa imagem e container do Docker, que irá se conectar ao PostgreSQL rodando paralelamente em outro container.
 
@@ -273,4 +289,14 @@ Perfeito! Temos o nosso serviço fazendo o CRUD da forma como queríamos.
 -   [docker build - Docker Documentation](https://docs.docker.com/engine/reference/commandline/build/)
 -   [Spring Cloud - Overview](https://spring.io/projects/spring-cloud)
 -   [Spring Data JPA - Reference](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference)
+
+### Menu
+
+[Ver índice de Katas](#katas)
+
+[Ir para a próxima atividade](04-criando-um-servico-utilizando-mongodb.md)
+
+[Ir para a atividade anterior](02-empacotando-o-servico-dentro-de-um-container.md)
+
+[Voltar para o README](/README.md)
 

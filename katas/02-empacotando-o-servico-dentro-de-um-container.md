@@ -1,10 +1,26 @@
 # 02 - Empacotando o Serviço dentro de um Container
 
-`Certifique-se de preencher os pré-requisitos, bem como ter instalado e configurado os programas presentes nessa seção, para participar desse Dojo.`
+## Katas
+
+[00 - Pré-requisitos](katas/00-pre-requisitos.md)
+
+[01 - Criando um Serviço simples com Spring Boot](katas/01-criando-um-servico-simples-com-spring-boot.md)
+
+**[02 - Empacotando o Serviço dentro de um Container](katas/02-empacotando-o-servico-dentro-de-um-container.md)**
+
+[03 - Criando um Serviço utilizando PostgreSQL](katas/03-criando-um-servico-utilizando-postgresql.md)
+
+[04 - Criando um Serviço utilizando MongoDB](katas/04-criando-um-servico-utilizando-mongodb.md)
+
+[05 - Orquestrando os Serviços utilizando Docker Compose](katas/05-orquestrando-os-servicos-utilizando-docker-compose.md)
+
+## Introdução
+
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
 
 Nesta atividade, vamos aprender a como empacotar um serviço em Spring Boot dentro de um container Docker.
 
-`Você pode pular esse exercício caso se sinta confortável trabalhar com Docker. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre como gerar imagens e containers Docker a partir de serviços Spring Boot.`
+*Você pode pular esse exercício caso se sinta confortável trabalhar com Docker. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre como gerar imagens e containers Docker a partir de serviços Spring Boot.*
 
 ## Configurando a geração da imagem Docker
 
@@ -200,4 +216,14 @@ E assim excluimos todos os rastros da nossa imagem e container Docker do nosso s
 -   [docker stop - Docker Documentation](https://docs.docker.com/engine/reference/commandline/stop/)
 -   [docker rm - Docker Documentation](https://docs.docker.com/engine/reference/commandline/rm/)
 -   [docker rmi - Docker Documentation](https://docs.docker.com/engine/reference/commandline/rmi/)
+
+### Menu
+
+[Ver índice de Katas](#katas)
+
+[Ir para a próxima atividade](03-criando-um-servico-utilizando-postgresql.md)
+
+[Ir para a atividade anterior](01-criando-um-servico-simples-com-spring-boot.md)
+
+[Voltar para o README](/README.md)
 
