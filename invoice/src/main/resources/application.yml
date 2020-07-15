@@ -13,9 +13,13 @@ endpoints:
 logging:
   level:
     org.dojo.invoice: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation: DEBUG
+
 
 spring:
+  client-service:
+    url: ${CLIENT_SERVICE_URL:http://localhost:8200}
   data:
     mongodb:
-      host: 'mongo'
-      port: '27017'
+      host: ${MONGODB_HOST:mongo}
+      port: ${MONGODB_PORT:27017}

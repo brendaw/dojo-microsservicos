@@ -14,6 +14,7 @@ public class Invoice {
     private String id;
 
     private String legalDocument;
+    private String clientName;
 
     private List<Product> products;
 

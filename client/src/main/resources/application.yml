@@ -16,9 +16,9 @@ logging:
 
 spring:
   datasource:
-    password: supersecretpassword
-    url: jdbc:postgresql://postgres:5432/client
-    username: client
+    password: ${DATASOURCE_PASSWORD:supersecretpassword}
+    url: ${DATASOURCE_URL:jdbc:postgresql://postgres:5432/client}
+    username: ${DATASOURCE_USERNAME:client}
   jpa:
     hibernate:
       ddl-auto: update

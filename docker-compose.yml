@@ -1,0 +1,61 @@
+version: '3.7'
+
+services:
+  client-server:
+    build:
+      context: client
+      dockerfile: Dockerfile
+    ports:
+      - "8200:8200"
+    restart: always
+    environment:
+      DATASOURCE_URL: jdbc:postgresql://postgres:5432/client
+      DATASOURCE_USERNAME: client
+      DATASOURCE_PASSWORD: supersecretpassword
+    depends_on:
+      - postgres   
+    networks:
+      - postgres_network
+      - services_network
+
+  invoice-server:
+    build:
+      context: invoice
+      dockerfile: Dockerfile
+    ports:
+      - "8300:8300"
+    restart: always
+    environment:
+      CLIENT_SERVICE_URL: http://client-server:8200
+      MONGODB_HOST: mongodb
+      MONGODB_PORT: '27017'
+    depends_on:
+      - mongodb
+    networks:
+      - mongodb_network
+      - services_network
+
+  postgres:
+    image: postgres:11-alpine
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_USER: client
+      POSTGRES_DB: client
+      POSTGRES_PASSWORD: supersecretpassword
+    networks:
+      - postgres_network
+
+  mongodb:
+    image: mongo:4
+    ports:
+      - "3306:3306"
+    restart: always
+    networks:
+      - mongodb_network  
+
+networks:
+  postgres_network:
+  mongodb_network: 
+  services_network:
