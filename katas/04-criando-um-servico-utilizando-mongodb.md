@@ -380,10 +380,4 @@ Isso aí. Todas as notas estão retornando.
 
 ### Menu
 
-[Ver índice de Katas](#katas)
-
-[Ir para a próxima atividade](05-orquestrando-os-servicos-utilizando-docker-compose.md)
-
-[Ir para a atividade anterior](03-criando-um-servico-utilizando-postgresql.md)
-
-[Voltar para o README](/README.md)
+[[<< Atividade Anterior](03-criando-um-servico-utilizando-postgresql.md)] [[Índice](#katas)] [[README](/README.md)] [[Próxima Atividade >>](05-orquestrando-os-servicos-utilizando-docker-compose.md)]

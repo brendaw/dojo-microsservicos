@@ -177,10 +177,4 @@ $ curl http://localhost:8100/actuator/health
 
 ### Menu
 
-[Ver índice de Katas](#katas)
-
-[Ir para a próxima atividade](02-empacotando-o-servico-dentro-de-um-container.md)
-
-[Ir para a atividade anterior](00-pre-requisitos.md)
-
-[Voltar para o README](/README.md)
+[[<< Atividade Anterior](00-pre-requisitos.md)] [[Índice](#katas)] [[README](/README.md)] [[Próxima Atividade >>](02-empacotando-o-servico-dentro-de-um-container.md)]

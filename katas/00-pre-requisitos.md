@@ -33,8 +33,4 @@ Para poder realizar os Katas (atividades) desse Dojo, são necessárias os segui
 
 ### Menu
 
-[Ver índice de Katas](#katas)
-
-[Ir para a próxima atividade](01-criando-um-servico-simples-com-spring-boot.md)
-
-[Voltar para o README](/README.md)
+[[Índice](#katas)] [[README](/README.md)] [[Próxima Atividade >>](01-criando-um-servico-simples-com-spring-boot.md)]

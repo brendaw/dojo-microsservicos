@@ -292,11 +292,5 @@ Perfeito! Temos o nosso serviço fazendo o CRUD da forma como queríamos.
 
 ### Menu
 
-[Ver índice de Katas](#katas)
-
-[Ir para a próxima atividade](04-criando-um-servico-utilizando-mongodb.md)
-
-[Ir para a atividade anterior](02-empacotando-o-servico-dentro-de-um-container.md)
-
-[Voltar para o README](/README.md)
+[[<< Atividade Anterior](02-empacotando-o-servico-dentro-de-um-container.md)] [[Índice](#katas)] [[README](/README.md)] [[Próxima Atividade >>](04-criando-um-servico-utilizando-mongodb.md)]
 

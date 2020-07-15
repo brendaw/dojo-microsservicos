@@ -219,11 +219,5 @@ E assim excluimos todos os rastros da nossa imagem e container Docker do nosso s
 
 ### Menu
 
-[Ver índice de Katas](#katas)
-
-[Ir para a próxima atividade](03-criando-um-servico-utilizando-postgresql.md)
-
-[Ir para a atividade anterior](01-criando-um-servico-simples-com-spring-boot.md)
-
-[Voltar para o README](/README.md)
+[[<< Atividade Anterior](01-criando-um-servico-simples-com-spring-boot.md)] [[Índice](#katas)] [[README](/README.md)] [[Próxima Atividade >>](03-criando-um-servico-utilizando-postgresql.md)]
 

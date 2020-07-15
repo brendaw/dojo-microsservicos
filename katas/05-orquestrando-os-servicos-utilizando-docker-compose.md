@@ -584,9 +584,4 @@ Vamos testar?
 
 ### Menu
 
-[Ver índice de Katas](#katas)
-
-[Ir para a atividade anterior](04-criando-um-servico-utilizando-mongodb.md)
-
-[Voltar para o README](README.md)
-
+[[<< Atividade Anterior](04-criando-um-servico-utilizando-mongodb.md)] [[Índice](#katas)] [[README](/README.md)]
