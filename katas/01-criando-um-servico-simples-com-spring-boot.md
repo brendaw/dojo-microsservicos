@@ -30,7 +30,7 @@ Nesta atividade, iremos criar um serviço REST simples em Spring Boot que retorn
     2.  **Language:** Java
     3.  **Spring Boot:** *2.3.1*
     4.  **Project Metadata:**
-        1.  **Group: ** *org.dojo*
+        1.  **Group:** *org.dojo*
         2.  **Artifact:** *simple*
         3.  **Name:** *simple-service*
         4.  **Description:** *Um serviço simples com Spring Boot.*
