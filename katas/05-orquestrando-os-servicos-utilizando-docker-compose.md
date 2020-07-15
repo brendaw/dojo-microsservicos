@@ -125,8 +125,8 @@ Modifique a parte da configuração do MongoDB para o trecho abaixo:
 
 ```yaml
 spring:
-	client-service:
-		url: ${CLIENT_SERVICE_URL:http://localhost:8200}
+  client-service:
+    url: ${CLIENT_SERVICE_URL:http://localhost:8200}
   data:
     mongodb:
       host: ${MONGODB_HOST:mongo}
@@ -576,11 +576,64 @@ client-server_1   | 2020-07-15 00:14:42.626  INFO 7 --- [           main] o.dojo
 
 Agora sim temos os nossos microsserviços rodando por meio de um orquestrador!
 
-Vamos testar?
-
 ## Testando a conexão dos nossos serviços
 
+Vamos criar dois usuários dentro do client-service que está sendo orquestrado pelo Docker Compose. Rode o comando a seguir:
+
+```shell
+$ curl --request POST --header "Content-Type: application/json" --data '{"name":"William","legalDocument":"11122233344"}' http://localhost:8200/clients
+
+{"id":1,"name":"William","legalDocument":"11122233344"}
+
+$ curl --request POST --header "Content-Type: application/json" --data '{"name":"Brendaw","legalDocument":"55566677788"}' http://localhost:8200/clients
+
+{"id":2,"name":"Brendaw","legalDocument":"55566677788"}
+
+```
+
+Beleza. Agora vamos tentar gerar uma nota fiscal com um legalDocument inválido. Rode o seguinte comando:
+
+```sh
+$ curl --request POST --header "Content-Type: application/json" --data '[{ "name": "Agenda 2020", "quantity": 1, "price": 15 }, { "name": "Lápis 2b", "quantity": 2, "price": 0.5 }]' http://localhost:8300/issue/000000000
+
+{"timestamp":"2020-07-15T21:31:47.566+00:00","status":400,"error":"Bad Request","message":"","path":"/issue/000000000"}
+```
+
+Validou e retornou Bad Request. Vamos tentar agora com um legalDocument válido:
+
+```shell
+$ curl --request POST --header "Content-Type: application/json" --data '[{ "name": "Agenda 2020", "quantity": 1, "price": 15 }, { "name": "Lápis 2b", "quantity": 2, "price": 0.5 }]' http://localhost:8300/issue/11122233344
+
+{"id":"5f0e62ec41555d11d0bc3e9a","legalDocument":"11122233344","clientName":"William","products":[{"id":null,"name":"Agenda 2020","quantity":1,"price":15.0},{"id":null,"name":"Lápis 2b","quantity":2,"price":0.5}],"totalAmount":16.0}
+```
+
+Maravilha. Vamos adicionar outra nota, utilizando o outro legalDocument cadastrado:
+
+```shell
+$ curl --request POST --header "Content-Type: application/json" --data '[{"id":null,"name":"Caderno pautado","quantity":2,"price":15.0},{"id":null,"name":"Lapiseira 0.9","quantity":2,"price":1.0}]' http://localhost:8300/issue/55566677788
+
+{"id":"5f0e630941555d11d0bc3e9b","legalDocument":"55566677788","clientName":"Brendaw","products":[{"id":null,"name":"Caderno pautado","quantity":2,"price":15.0},{"id":null,"name":"Lapiseira 0.9","quantity":2,"price":1.0}],"totalAmount":32.0}
+```
+
+Vamos ver todas as notas retornadas pelo serviço. Execute o comando abaixo:
+
+```shell
+$ curl --request GET http://localhost:8300/invoices
+
+[{"id":"5f0e62ec41555d11d0bc3e9a","legalDocument":"11122233344","clientName":"William","products":[{"id":null,"name":"Agenda 2020","quantity":1,"price":15.0},{"id":null,"name":"Lápis 2b","quantity":2,"price":0.5}],"totalAmount":16.0},{"id":"5f0e630941555d11d0bc3e9b","legalDocument":"55566677788","clientName":"Brendaw","products":[{"id":null,"name":"Caderno pautado","quantity":2,"price":15.0},{"id":null,"name":"Lapiseira 0.9","quantity":2,"price":1.0}],"totalAmount":32.0}]
+```
+
+Assim, enfim, temos nossos microsserviços orquestrados e comunicando entre si.
+
 ## Para ir além
+
+-   [Compose file version 3 reference - Docker Documentation](https://docs.docker.com/compose/compose-file/)
+-   [Externalized Configuration - Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/2.1.9.RELEASE/reference/html/boot-features-external-config.html)
+-   [Query Creation - Spring Data JPA Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation)
+-   [Spring Cloud OpenFeign Documentation](https://cloud.spring.io/spring-cloud-openfeign/reference/html/)
+-   [docker-compose build - Docker Documentation](https://docs.docker.com/compose/reference/build/)
+-   [docker-compose up - Docker Documentation](https://docs.docker.com/compose/reference/up/)
+-   [docker-compose stop - Docker Documentation](https://docs.docker.com/compose/reference/stop/)
 
 ### Menu
 
