@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim
 
-MAINTAINER William Brendaw <will@williambrendaw.com>
+MAINTAINER William Brendaw <williambrendaw@protonmail.com>
 
 WORKDIR /app
 
