@@ -2,17 +2,17 @@
 
 ## Katas
 
-[00 - Pré-requisitos](katas/00-pre-requisitos.md)
+[00 - Pré-requisitos](/katas/00-pre-requisitos.md)
 
-[01 - Criando um Serviço simples com Spring Boot](katas/01-criando-um-servico-simples-com-spring-boot.md)
+[01 - Criando um Serviço simples com Spring Boot](/katas/01-criando-um-servico-simples-com-spring-boot.md)
 
-[02 - Empacotando o Serviço dentro de um Container](katas/02-empacotando-o-servico-dentro-de-um-container.md)
+[02 - Empacotando o Serviço dentro de um Container](/katas/02-empacotando-o-servico-dentro-de-um-container.md)
 
-**[03 - Criando um Serviço utilizando PostgreSQL](katas/03-criando-um-servico-utilizando-postgresql.md)**
+**[03 - Criando um Serviço utilizando PostgreSQL](/katas/03-criando-um-servico-utilizando-postgresql.md)**
 
-[04 - Criando um Serviço utilizando MongoDB](katas/04-criando-um-servico-utilizando-mongodb.md)
+[04 - Criando um Serviço utilizando MongoDB](/katas/04-criando-um-servico-utilizando-mongodb.md)
 
-[05 - Orquestrando os Serviços utilizando Docker Compose](katas/05-orquestrando-os-servicos-utilizando-docker-compose.md)
+[05 - Orquestrando os Serviços utilizando Docker Compose](/katas/05-orquestrando-os-servicos-utilizando-docker-compose.md)
 
 ## Introdução
 
