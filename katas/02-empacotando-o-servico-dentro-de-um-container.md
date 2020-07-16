@@ -37,7 +37,7 @@ Crie um arquivo com o nome Dockerfile na raiz do repositório do serviço base c
 ```dockerfile
 FROM openjdk:11-jre-slim
 
-MAINTAINER William Brendaw <will@williambrendaw.com>
+MAINTAINER William Brendaw <williambrendaw@protonmail.com>
 
 WORKDIR /app
 
@@ -75,7 +75,7 @@ ddbf88050b6e: Pull complete
 Digest: sha256:afd1c9c9138dc4bfe062f15ce74b2d0d9518d8f6f8309881e8f821cb5b182bf0
 Status: Downloaded newer image for openjdk:11-jre-slim
  ---> 030d68516e3a
-Step 2/5 : MAINTAINER William Brendaw <will@williambrendaw.com>
+Step 2/5 : MAINTAINER William Brendaw <williambrendaw@protonmail.com>
  ---> Running in d6095bf9f677
 Removing intermediate container d6095bf9f677
  ---> e389a13fa7e9

@@ -1,5 +1,5 @@
 server:
-  port: 8200
+  port: 8300
   tomcat:
     max-threads: 200
     max-http-post-size: 2MB
