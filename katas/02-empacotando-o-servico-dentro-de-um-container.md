@@ -16,17 +16,17 @@
 
 ## Introdução
 
-*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes nessa seção para realizar a atividade.*
 
 Nesta atividade, vamos aprender a como empacotar um serviço em Spring Boot dentro de um container Docker.
 
-*Você pode pular esse exercício caso se sinta confortável trabalhar com Docker. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre como gerar imagens e containers Docker a partir de serviços Spring Boot.*
+*Você pode pular esse exercício caso se sinta confortável trabalhando com Docker. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre como gerar imagens e containers Docker a partir de serviços Spring Boot.*
 
 *Caso você não tenha feito a primeira atividade, [acesse aqui](/simple) o conteúdo gerado para poder seguir com a explicação*.
 
 ## Configurando a geração da imagem Docker
 
-Para deixar o serviço apto a ser empacotado, criaremos um novo tipo de arquivo: o Dockerfile. Nele, terá todas as informações necessárias para gerar uma imagem docker com a última versão compilada do serviço.
+Para deixar o serviço apto a ser empacotado, criaremos um novo tipo de arquivo: o Dockerfile. Nele, terão todas as informações necessárias para gerar uma imagem docker com a última versão compilada do serviço.
 
 Com esse tipo de configuração, será mais fácil realizar o gerenciamento das versões do serviço, e também não ficaremos dependentes de qual sistema o serviço irá rodar: o Docker cuidará disso para nós.
 

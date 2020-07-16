@@ -16,7 +16,7 @@
 
 ## Introdução
 
-*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes nessa seção para realizar a atividade.*
 
 Neste exercício, iremos criar um serviço para realizar o gerenciar notas fiscais, que serão persistidos no MongoDB. O serviço será empacotando numa imagem e container do Docker, que irá se conectar ao MariaDB rodando paralelamente em outro container.
 
@@ -24,7 +24,7 @@ Neste exercício, iremos criar um serviço para realizar o gerenciar notas fisca
 
 ## Preparando o invoice-service
 
-Para começar essa atividade, você pode criar um novo serviço com o nome `invoice-service` a partir do Spring Initializr, ou pode pegar esse serviço já criado neste link.
+Para começar essa atividade, você pode criar um novo serviço com o nome `invoice-service` a partir do Spring Initializr, ou pode pegar esse serviço já criado [neste link](/invoice-base).
 
 Depois que você tiver o serviço no seu computador, entre na pasta do mesmo com o seu Terminal.
 
@@ -62,7 +62,7 @@ Temos o Mongo configurado e rodando num container na nossa máquina.
 
 ## Configurando MongoDB no serviço
 
-Para adicionar o MongoDB no serviço, e com isso facilitar a nossa vida ao lidar com os documentos no na coleção do banco, basta adicionar essa linha abaixo da linha `implementation 'org.springframework.boot:spring-boot-starter-web'`, dentro do arquivo *build.gradle*:
+Para adicionar o MongoDB no serviço, e com isso facilitar a nossa vida ao lidar com os documentos na coleção do banco, basta adicionar essa linha abaixo da linha `implementation 'org.springframework.boot:spring-boot-starter-web'`, dentro do arquivo *build.gradle*:
 
 *invoice/build.gradle*
 
@@ -281,7 +281,7 @@ public class InvoiceController {
 
 ## Testando o invoice-service
 
-Depois de seguir esses passo, chegou a hora para vermos o serviço funcionando.
+Depois de seguir esses passos, chegou a hora para vermos o serviço funcionando.
 
 Antes de gerar uma imagem do serviço, precisamos buildar o serviço. Rode o comando abaixo:
 
@@ -347,7 +347,7 @@ $ curl --request POST --header "Content-Type: application/json" --data '[{ "name
 {"id":"5f06693da7c46653a694ae2a","legalDocument":"00011122233","products":[{"id":null,"name":"Caderno pautado","quantity":2,"price":15.0},{"id":null,"name":"Lapiseira 0.9","quantity":2,"price":1.0}],"totalAmount":32.0}
 ```
 
-Vamos validar se para esse cpf vai aparecer as duas notas criadas:
+Vamos validar se para esse cpf vão aparecer as duas notas criadas:
 
 ```shell
 $ curl --request GET http://localhost:8300/invoices/client/00011122233
@@ -363,7 +363,7 @@ $ curl --request POST --header "Content-Type: application/json" --data '[{ "name
 {"id":"5f066ae4a7c46653a694ae2b","legalDocument":"44455566677","products":[{"id":null,"name":"Agenda 2020","quantity":1,"price":15.0},{"id":null,"name":"Lápis 2b","quantity":2,"price":0.5}],"totalAmount":16.0}
 ```
 
-Por fim, vamos ver se está aparecendo todas as notas criadas:
+Por fim, vamos ver se estão aparecendo todas as notas criadas:
 
 ```shell
 $ curl --request GET http://localhost:8300/invoices

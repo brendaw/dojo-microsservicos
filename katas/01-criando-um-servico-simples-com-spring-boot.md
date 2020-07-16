@@ -16,11 +16,11 @@
 
 ## Introdução
 
-*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes nessa seção para realizar a atividade.*
 
 Nesta atividade, iremos criar um serviço REST simples em Spring Boot que retorna "Hello World" a partir do endpoint `/hello`.
 
-*Você pode pular esse exercício caso se sinta confortável em desenvolver aplicações com Spring Boot. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre os princícios do Spring Boot.*
+*Você pode pular esse exercício caso se sinta confortável em desenvolver aplicações com Spring Boot. Apenas lembre-se que as próximas atividades assumem que você tenha um bom conhecimento sobre os princípios do Spring Boot.*
 
 ## Passo-a-passo para criar a base do serviço
 

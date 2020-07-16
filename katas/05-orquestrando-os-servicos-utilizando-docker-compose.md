@@ -16,9 +16,9 @@
 
 ## Introdução
 
-*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes nessa seção para realizar a atividade.*
 
-Neste exercício, iremos realizar a orquestração dos serviços e banco de dados configurados até agora. Para isso, faremos a configuração das imagens e containers dentro do Docker Compose, além de modificar os dois serviços para aceitarem configurações externas do orquestrados, bem como modificar o invoice-service para se conectar ao cliente-service na hora de gerar a nota fiscal.
+Neste exercício, iremos realizar a orquestração dos serviços e banco de dados configurados até agora. Para isso, faremos a configuração das imagens e containers dentro do Docker Compose, além de modificar os dois serviços para aceitarem configurações externas do orquestrador, bem como modificar o invoice-service para se conectar ao cliente-service na hora de gerar a nota fiscal.
 
 *Certifique-se de ter os serviços desenvolvidos nos dois últimos exercícios para poder seguir com esse treinamento. [Acesse aqui](/client-service) o cliente-service. [E aqui](/invoice-service) o invoice-service.*
 
@@ -424,7 +424,7 @@ public class InvoiceService {
 
 ## Buildando e orquestrando os serviços e bancos de dados
 
-Até que enfim chegamos a validação principal desse dojo, que é ver os nossos serviços funcionando entre si orquestrados como os microsserviços que são.
+Até que enfim chegamos à validação principal desse dojo, que é ver os nossos serviços funcionando entre si orquestrados como os microsserviços que são.
 
 Para isso, vamos buildar os serviços e também gerar as imagens dos mesmos com o docker composer.
 
@@ -623,7 +623,7 @@ $ curl --request GET http://localhost:8300/invoices
 [{"id":"5f0e62ec41555d11d0bc3e9a","legalDocument":"11122233344","clientName":"William","products":[{"id":null,"name":"Agenda 2020","quantity":1,"price":15.0},{"id":null,"name":"Lápis 2b","quantity":2,"price":0.5}],"totalAmount":16.0},{"id":"5f0e630941555d11d0bc3e9b","legalDocument":"55566677788","clientName":"Brendaw","products":[{"id":null,"name":"Caderno pautado","quantity":2,"price":15.0},{"id":null,"name":"Lapiseira 0.9","quantity":2,"price":1.0}],"totalAmount":32.0}]
 ```
 
-Assim, enfim, temos nossos microsserviços orquestrados e comunicando entre si.
+Assim, enfim, temos nossos microsserviços orquestrados e comunicando-se entre si.
 
 *Se quiser, você pode [acessar aqui](/invoice) o invoice-service, [e aqui](/client) o client service, para comparar a sua implementação com a implementação esperada.*
 

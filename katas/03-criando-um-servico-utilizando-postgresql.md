@@ -16,7 +16,7 @@
 
 ## Introdução
 
-*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes dessa seção para realizar a atividade.*
+*Certifique-se de [preencher os pré-requisitos](00-pre-requisitos.md), bem como ter instalado e configurado os programas presentes nessa seção para realizar a atividade.*
 
 Neste exercício, iremos criar um serviço para realizar o gerenciamento dos registros dos clientes, que serão persistidos no PostgreSQL.  O serviço será empacotando numa imagem e container do Docker, que irá se conectar ao PostgreSQL rodando paralelamente em outro container.
 
@@ -24,7 +24,7 @@ Neste exercício, iremos criar um serviço para realizar o gerenciamento dos reg
 
 ## Preparando o client-service
 
-Para começar essa atividade, você pode criar um novo serviço com o nome `client-service` a partir do Spring Initializr, ou pode pegar esse serviço já criado neste link.
+Para começar essa atividade, você pode criar um novo serviço com o nome `client-service` a partir do Spring Initializr, ou pode pegar esse serviço já criado [neste link](/client-base).
 
 Depois que você tiver o serviço no seu computador, entre na pasta do mesmo com o seu Terminal.
 
@@ -34,7 +34,7 @@ $ cd /caminho/para/o/client-service
 
 ## Subindo o container do PostgreSQL 11
 
-Para rodarmos o PostgreSQL 11 dentro de um container Docker, execute o seguinte comando:
+Para rodar o PostgreSQL 11 dentro de um container Docker, execute o seguinte comando:
 
 ```sh
 $ docker run --name postgres -e POSTGRES_USER=client -e POSTGRES_DB=client -e POSTGRES_PASSWORD=supersecretpassword -d -p 5432:5432 postgres:11-alpine
